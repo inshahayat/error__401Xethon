@@ -21,13 +21,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="index.html">Lifestyle Store</a>
+                    <a class="navbar-brand" href="product.php">Lifestyle Store</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href = "cart.html"><span class = "glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
                         <li><a href = "settings.html"><span class = "glyphicon glyphicon-user"></span> Settings</a></li>
-                        <li><a href = "logout_script.html"><span class = "glyphicon glyphicon-log-in"></span> Logout</a></li>
+                        <li><a href = "./database/logout.php"><span class = "glyphicon glyphicon-log-in"></span> Logout</a></li>
                     </ul>
                 </div>
             </div>

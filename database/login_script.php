@@ -14,7 +14,8 @@ if ($upass == ''){
                 </script>
         <?php
 }else{
-        $sql = "SELECT * FROM  user_signup WHERE  email =  '" . $email . "' AND  password =  '" . $h_upass . "'";
+
+	    $sql = "SELECT * FROM user_signup WHERE email =  '" . $email . "' AND password =  '" . $h_upass . "'";
         $result = mysqli_query($con, $sql);
  
         if ($result){
@@ -28,13 +29,14 @@ if ($upass == ''){
                 $found_user  = mysqli_fetch_array($result);
  
                 //fill the result to session variable
+				$_SESSION['logged_in'] = TRUE;
                 $_SESSION['MEMBER_ID']  = $found_user['signup_id'];
                 $_SESSION['Name'] = $found_user['name'];
                 $_SESSION['Email']  =  $found_user['email'];
           
              ?>    <script type="text/javascript">
                       //then it will be redirected to index.php
-                      window.location = "../product.html";
+                      window.location = "../product.php";
                   </script>
              <?php        
           
@@ -42,7 +44,7 @@ if ($upass == ''){
             } else {
             //IF theres no result
 			?>    <script type="text/javascript">
-                alert("Something went wrong.");
+                alert("Email or password is incorrect.");
                 window.location = "../login.php";
                 </script>
         <?php
@@ -53,7 +55,8 @@ if ($upass == ''){
                  # code...
          die("Table Query failed: " );
         }
-        
-    }      
-}
+			
+		}      
+}      
+
 ?>

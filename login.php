@@ -25,12 +25,12 @@
                     </button>
                     <a class="navbar-brand" href="index.html">Lifestyle Store</a>
                 </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
+                <!-- <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                         <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
         <div id="content">
@@ -53,7 +53,7 @@
                                     <button type="submit" name="submit" class="btn btn-primary">Login</button><br><br>
                                 </form><br/>
                             </div>
-                            <div class="panel-footer"><p>Don't have an account? <a href="signup.html">Register</a></p></div>
+                            <div class="panel-footer"><p>Don't have an account? <a href="signup.php">Register</a></p></div>
                         </div>
                     </div>
                 </div>
