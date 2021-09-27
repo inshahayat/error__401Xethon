@@ -43,9 +43,9 @@
                             </div>
                             <div class="panel-body">
                                 <p class="text-warning"><i>Login to make a purchase</i><p>
-                                <form role="form" action="login_submit.html" method="POST">
+                                <form role="form" action="./database/login_script.php" method="POST" enctype="multipart/form-data">
                                     <div class="form-group">
-                                        <input type="email" class="form-control"  placeholder="Email" name="e-mail" required>
+                                        <input type="email" class="form-control"  placeholder="Email" name="email" required>
                                     </div>
                                     <div class="form-group">
                                         <input type="password" class="form-control" placeholder="Password" name="password" required>
