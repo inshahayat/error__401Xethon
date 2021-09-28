@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-    	<h1 class="mt-5 mb-5">Review & Rating System in PHP & Mysql using Ajax</h1>
+    	<h1 class="mt-5 mb-5"></h1>
     	<div class="card">
     		<div class="card-header">Sample Product</div>
     		<div class="card-body">
