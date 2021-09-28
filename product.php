@@ -26,7 +26,7 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href = "cart.html"><span class = "glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
-                        <li><a href = "settings.html"><span class = "glyphicon glyphicon-user"></span> Settings</a></li>
+                        <!-- <li><a href = "settings.html"><span class = "glyphicon glyphicon-user"></span> Settings</a></li> -->
                         <li><a href = "./database/logout.php"><span class = "glyphicon glyphicon-log-in"></span> Logout</a></li>
                     </ul>
                 </div>
