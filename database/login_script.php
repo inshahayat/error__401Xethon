@@ -7,6 +7,27 @@ if (isset($_POST['submit'])) {
   $upass = trim($_POST['password']);
   $h_upass = md5($upass);
 
+  $pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^";
+  if (empty ($_POST["email"])) {  
+    ?>    <script type="text/javascript">
+    alert("Please enter the email.");
+    window.location = "../login.php";
+    </script>
+<?php 
+}else if (!preg_match ($pattern, $email) ){  
+    ?>    <script type="text/javascript">
+    alert("Please enter valid email.");
+    window.location = "../login.php";
+    </script>
+<?php
+  } else if(empty ($_POST["password"])){
+    ?>    <script type="text/javascript">
+    alert("Please enter the password.");
+    window.location = "../login.php";
+    </script>
+<?php
+  }    
+
 if ($upass == ''){
      ?>    <script type="text/javascript">
                 alert("Password is missing!");

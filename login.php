@@ -45,10 +45,10 @@
                                 <p class="text-warning"><i>Login to make a purchase</i><p>
                                 <form role="form" action="./database/login_script.php" method="POST" enctype="multipart/form-data">
                                     <div class="form-group">
-                                        <input type="email" class="form-control"  placeholder="Email" name="email" required>
+                                        <input type="email" class="form-control"  placeholder="Email" name="email">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Password" name="password" required>
+                                        <input type="password" class="form-control" placeholder="Password" name="password">
                                     </div>
                                     <button type="submit" name="submit" class="btn btn-primary">Login</button><br><br>
                                 </form><br/>
